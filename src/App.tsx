@@ -18,6 +18,7 @@ import {
 
 import { BALKHASH_PORTAL_DB, RegionKey, ResortItem, translations } from './data/db';
 import { fetchGoogleSheetItems } from './services/googleSheet';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { SafetyModal } from './components/SafetyModal';
 import { WeatherWidget } from './components/WeatherWidget';
@@ -742,6 +743,9 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
 
     </div>
   );
