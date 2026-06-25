@@ -15,6 +15,7 @@ import {
   RefreshCw,
   CloudOff
 } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 import { BALKHASH_PORTAL_DB, RegionKey, ResortItem, translations } from './data/db';
 import { fetchGoogleSheetItems } from './services/googleSheet';
@@ -742,6 +743,9 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
 
     </div>
   );
